@@ -1,5 +1,38 @@
-# Vue 3 + Vite
+# Tip Calculator (Le/Tip)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a32874b7-6efb-4217-82f4-efc1e41afc03/deploy-status)](https://tip-calculator-letip.netlify.app/)
+![linguagens](https://img.shields.io/github/languages/count/sue-lima/tip-calculator)
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 🔖 About<img width="580" height="430" alt="Le/Tip" src="https://github.com/user-attachments/assets/258eebcf-0755-4079-bafe-1ea0eb5f896f" />
+
+The tip calculator is a responsive Vue web application that lets you split any bill among your friends.
+
+## 💻 Technologies
+
+- __Vue__
+- __Vite__ 
+- __JavaScript__ 
+- __Axios__
+- __Tailwindcss__
+- __Sweetalert2__
+- __Pinia__
+- __Eslint__
+- __Awesome API (API)__
+
+## ⚙️ How to run
+
+```bash
+# Enter the folder with
+$ cd tip-calculator
+
+# Install the dependencies
+$ npm install
+
+# Run for Development
+$ npm run dev
+
+# Run for Production
+$ npm run build
+```
+
+Made with ❤️ by <a href="https://www.linkedin.com/in/suelen-ferreira-de-lima-b3b97073/">Sue Lima</a>
