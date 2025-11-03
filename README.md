@@ -14,7 +14,6 @@ The tip calculator is a responsive Vue web application that lets you split any b
 - __JavaScript__ 
 - __Axios__
 - __Tailwindcss__
-- __Sweetalert2__
 - __Pinia__
 - __Eslint__
 - __Awesome API (API)__
