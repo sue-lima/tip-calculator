@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tip-calculator__header {
+    @apply flex justify-end p-5;
+  }
+
+  .tip-calculator__main {
+    @apply flex-1 flex flex-col items-center justify-center px-4;
+  }
+
+  .tip-calculator__title {
+    @apply font-bold text-7xl;
+  }
+
+  .tip-calculator__container {
+    @apply w-full flex flex-col pt-5 transition-all duration-500 md:flex-row md:justify-around md:items-baseline md:h-full md:w-1/2;
+  }
+
+  .tip-calculator__form {
+    @apply md:w-1/2;
+  }
+
+  .tip-calculator__result {
+    @apply md:w-1/2;
+  }
+
+  .tip-calculator__button {
+    @apply block md:hidden mt-4;
+  }
+
+  .tip-calculator__toggle-btn {
+    @apply w-12 h-12 rounded-full cursor-pointer bg-sky-950 flex items-center justify-center;
+  }
+
+  .tip-calculator__footer {
+    @apply h-16 flex justify-center items-center;
+  }
+}

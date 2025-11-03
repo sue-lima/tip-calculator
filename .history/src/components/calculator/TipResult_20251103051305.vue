@@ -1,0 +1,49 @@
+<template>
+  <div class="flex flex-col text-center gap-7">
+    <div>
+      <span>Conta</span>
+      <div class="font-bold">{{ baseSymbol }}{{ billValue }}</div>
+    </div>
+
+    <div>
+      <span>Gorjeta</span>
+      <div class="font-bold">{{ baseSymbol }}{{ tipAmount }}</div>
+    </div>
+
+    <div>
+      <span>Total</span>
+      <div class="font-bold">{{ baseSymbol }}{{ totalAmount }}</div>
+    </div>
+
+    <div>
+      <span>Por pessoa</span>
+      <div class="font-bold">{{ baseSymbol }}{{ perPerson }}</div>
+    </div>
+
+    <div>
+      <span>Em {{ localSymbol }}</span>
+      <div class="font-bold">{{ localSymbol }}{{ totalInLocal }}</div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { computed } from 'vue'
+import { useTipStore } from '../../store/useTipStore'
+
+export default {
+  name: 'TipResult',
+  setup() {
+    const store = useTipStore()
+    const billValue = computed(() => store.billValue.toFixed(2))
+    const tipAmount = computed(() => store.tipAmount.toFixed(2))
+    const totalAmount = computed(() => store.totalAmount.toFixed(2))
+    const perPerson = computed(() => store.perPerson.toFixed(2))
+    const totalInLocal = computed(() => store.totalInLocal.toFixed(2))
+    const baseSymbol = computed(() => store.currentSymbol)
+    const localSymbol = computed(() => store.currencies[store.currency.local_currency].symbol)
+
+    return { billValue, tipAmount, totalAmount, perPerson, totalInLocal, baseSymbol, localSymbol }
+  },
+}
+</script>
